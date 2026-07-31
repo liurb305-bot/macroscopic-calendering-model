@@ -1,0 +1,71 @@
+2D DPC roll fitting valid post-nip thickness result
+ODB: RollPress_2D_DPC_RollFit_E6500_S00008B5_run_1cpu.odb
+Final frame: step=Rolling frameValue=0.41999999
+Initial thickness: 150.000000 um
+Nominal roll gap: 135.000000 um
+Desired final thickness: 135.000000 um
+Valid post-nip column count: 12
+Valid post-nip average thickness: 135.186839 um
+Valid post-nip min thickness: 134.521589 um
+Valid post-nip max thickness: 135.739997 um
+Valid post-nip thickness span: 1.218408 um
+Reached desired final thickness: YES
+Final ALLKE/ALLIE: 2.1906112
+ALLAE: 0.00016697076
+ALLAE (Repeated: key = Clamp_Down, 23): 0.00023495112
+ALLAE (Repeated: key = Hold_Clamp, 23): 0.00019608678
+ALLAE (Repeated: key = Rolling, 23): 0.00016697076
+ALLCD: 0
+ALLDMD: 0
+ALLFD: 0.00076100114
+ALLIE: 0.0089576347
+ALLIE (Repeated: key = Clamp_Down, 24): 0.0081681451
+ALLIE (Repeated: key = Hold_Clamp, 24): 0.00882007
+ALLIE (Repeated: key = Rolling, 24): 0.0089576347
+ALLKE: 0.019622695
+ALLKE (Repeated: key = Clamp_Down, 25): 0.019624026
+ALLKE (Repeated: key = Hold_Clamp, 25): 0.019623052
+ALLKE (Repeated: key = Rolling, 25): 0.019622695
+ALLMW: 0
+ALLPD: 0.0088045709
+ALLPD (Repeated: key = Clamp_Down, 27): 0.0079446565
+ALLPD (Repeated: key = Hold_Clamp, 27): 0.0086374404
+ALLPD (Repeated: key = Rolling, 27): 0.0088045709
+ALLSE: -1.3907236e-05
+ALLSE (Repeated: key = Clamp_Down, 28): -1.1462361e-05
+ALLSE (Repeated: key = Hold_Clamp, 28): -1.3457488e-05
+ALLSE (Repeated: key = Rolling, 28): -1.3907236e-05
+ALLVD: 0.0058719851
+ALLWK: -0.14771585
+ALLWK (Repeated: key = Clamp_Down, 29): 2.8544295
+ALLWK (Repeated: key = Hold_Clamp, 29): 4.0063539
+ALLWK (Repeated: key = Rolling, 29): -0.14771585
+ALLAE_max_abs: 0.00019608674
+ALLAE (Repeated: key = Clamp_Down, 23)_max_abs: 0.0002725964
+ALLAE (Repeated: key = Hold_Clamp, 23)_max_abs: 0.00024062053
+ALLAE (Repeated: key = Rolling, 23)_max_abs: 0.00019608674
+ALLCD_max_abs: 0
+ALLDMD_max_abs: 0
+ALLFD_max_abs: 0.00076100114
+ALLIE_max_abs: 0.0089576384
+ALLIE (Repeated: key = Clamp_Down, 24)_max_abs: 0.0081681451
+ALLIE (Repeated: key = Hold_Clamp, 24)_max_abs: 0.00882007
+ALLIE (Repeated: key = Rolling, 24)_max_abs: 0.0089576384
+ALLKE_max_abs: 0.019623056
+ALLKE (Repeated: key = Clamp_Down, 25)_max_abs: 0.019903522
+ALLKE (Repeated: key = Hold_Clamp, 25)_max_abs: 0.019628042
+ALLKE (Repeated: key = Rolling, 25)_max_abs: 0.019623512
+ALLMW_max_abs: 0
+ALLPD_max_abs: 0.0088045709
+ALLPD (Repeated: key = Clamp_Down, 27)_max_abs: 0.0079446565
+ALLPD (Repeated: key = Hold_Clamp, 27)_max_abs: 0.0086374404
+ALLPD (Repeated: key = Rolling, 27)_max_abs: 0.0088045709
+ALLSE_max_abs: 1.3907246e-05
+ALLSE (Repeated: key = Clamp_Down, 28)_max_abs: 1.1462361e-05
+ALLSE (Repeated: key = Hold_Clamp, 28)_max_abs: 1.3458359e-05
+ALLSE (Repeated: key = Rolling, 28)_max_abs: 1.3909081e-05
+ALLVD_max_abs: 0.0058719851
+ALLWK_max_abs: 4.7628946
+ALLWK (Repeated: key = Clamp_Down, 29)_max_abs: 2.8544295
+ALLWK (Repeated: key = Hold_Clamp, 29)_max_abs: 4.0063539
+ALLWK (Repeated: key = Rolling, 29)_max_abs: 4.7633066

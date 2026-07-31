@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="610" viewBox="0 0 980 610">
+<rect width="100%" height="100%" fill="white"/>
+<text x="490.0" y="30" text-anchor="middle" font-size="22" font-family="Arial">2D DPC roll fit profiles for later 3D validation</text>
+<rect x="90" y="60" width="860" height="460" fill="white" stroke="#333"/>
+<line x1="90" x2="950" y1="520.00" y2="520.00" stroke="#e5e5e5"/>
+<text x="78" y="525.00" text-anchor="end" font-size="13" font-family="Arial">130</text>
+<line x1="90" x2="950" y1="413.02" y2="413.02" stroke="#e5e5e5"/>
+<text x="78" y="418.02" text-anchor="end" font-size="13" font-family="Arial">135</text>
+<line x1="90" x2="950" y1="306.05" y2="306.05" stroke="#e5e5e5"/>
+<text x="78" y="311.05" text-anchor="end" font-size="13" font-family="Arial">140</text>
+<line x1="90" x2="950" y1="199.07" y2="199.07" stroke="#e5e5e5"/>
+<text x="78" y="204.07" text-anchor="end" font-size="13" font-family="Arial">145</text>
+<line x1="90" x2="950" y1="92.09" y2="92.09" stroke="#e5e5e5"/>
+<text x="78" y="97.09" text-anchor="end" font-size="13" font-family="Arial">150</text>
+<line x1="168.18" x2="168.18" y1="60" y2="520" stroke="#f0f0f0"/>
+<line x1="324.55" x2="324.55" y1="60" y2="520" stroke="#f0f0f0"/>
+<line x1="480.91" x2="480.91" y1="60" y2="520" stroke="#f0f0f0"/>
+<line x1="637.27" x2="637.27" y1="60" y2="520" stroke="#f0f0f0"/>
+<line x1="793.64" x2="793.64" y1="60" y2="520" stroke="#f0f0f0"/>
+<line x1="950.00" x2="950.00" y1="60" y2="520" stroke="#f0f0f0"/>
+<line x1="90" x2="950" y1="92.09" y2="92.09" stroke="#777" stroke-dasharray="4,4" stroke-width="1.6"/>
+<text x="942" y="86.09" text-anchor="end" font-size="13" font-family="Arial" fill="#777">Initial 150 um</text>
+<line x1="90" x2="950" y1="413.02" y2="413.02" stroke="#111" stroke-dasharray="8,5" stroke-width="1.6"/>
+<text x="942" y="407.02" text-anchor="end" font-size="13" font-family="Arial" fill="#111">Target 135 um</text>
+<text x="490.0" y="580" text-anchor="middle" font-size="16" font-family="Arial">Initial x position of measured post-nip column / mm</text>
+<text x="24" y="305.0" transform="rotate(-90 24,305.0)" text-anchor="middle" font-size="16" font-family="Arial">Final post-nip thickness / um</text>
+<polyline points="90.00,410.63 168.18,406.27 246.36,397.02 324.55,386.89 402.73,374.90 480.91,361.30 559.09,343.80 637.27,325.66 715.45,305.22 793.64,282.51 871.82,258.17 950.00,243.70" fill="none" stroke="#ff9800" stroke-width="1.9" />
+<circle cx="90.00" cy="410.63" r="3.0" fill="#ff9800" /><circle cx="168.18" cy="406.27" r="3.0" fill="#ff9800" /><circle cx="246.36" cy="397.02" r="3.0" fill="#ff9800" /><circle cx="324.55" cy="386.89" r="3.0" fill="#ff9800" /><circle cx="402.73" cy="374.90" r="3.0" fill="#ff9800" /><circle cx="480.91" cy="361.30" r="3.0" fill="#ff9800" /><circle cx="559.09" cy="343.80" r="3.0" fill="#ff9800" /><circle cx="637.27" cy="325.66" r="3.0" fill="#ff9800" /><circle cx="715.45" cy="305.22" r="3.0" fill="#ff9800" /><circle cx="793.64" cy="282.51" r="3.0" fill="#ff9800" /><circle cx="871.82" cy="258.17" r="3.0" fill="#ff9800" /><circle cx="950.00" cy="243.70" r="3.0" fill="#ff9800" />
+<line x1="110" x2="138" y1="80" y2="80" stroke="#ff9800" stroke-width="3"/>
+<text x="146" y="85" font-size="13" font-family="Arial">S0002: S=0.002, beta=65 deg</text>
+<polyline points="90.00,412.26 168.18,411.15 246.36,405.77 324.55,400.84 402.73,393.60 480.91,383.25 559.09,370.65 637.27,363.26 715.45,353.32 793.64,346.79 871.82,350.50 950.00,348.13" fill="none" stroke="#4caf50" stroke-width="1.9" />
+<circle cx="90.00" cy="412.26" r="3.0" fill="#4caf50" /><circle cx="168.18" cy="411.15" r="3.0" fill="#4caf50" /><circle cx="246.36" cy="405.77" r="3.0" fill="#4caf50" /><circle cx="324.55" cy="400.84" r="3.0" fill="#4caf50" /><circle cx="402.73" cy="393.60" r="3.0" fill="#4caf50" /><circle cx="480.91" cy="383.25" r="3.0" fill="#4caf50" /><circle cx="559.09" cy="370.65" r="3.0" fill="#4caf50" /><circle cx="637.27" cy="363.26" r="3.0" fill="#4caf50" /><circle cx="715.45" cy="353.32" r="3.0" fill="#4caf50" /><circle cx="793.64" cy="346.79" r="3.0" fill="#4caf50" /><circle cx="871.82" cy="350.50" r="3.0" fill="#4caf50" /><circle cx="950.00" cy="348.13" r="3.0" fill="#4caf50" />
+<line x1="110" x2="138" y1="102" y2="102" stroke="#4caf50" stroke-width="3"/>
+<text x="146" y="107" font-size="13" font-family="Arial">S0001: S=0.001, beta=65 deg</text>
+<polyline points="90.00,406.26 168.18,401.43 246.36,393.83 324.55,386.22 402.73,379.61 480.91,377.12 559.09,380.26 637.27,380.30 715.45,382.47 793.64,385.47 871.82,392.93 950.00,396.58" fill="none" stroke="#795548" stroke-width="1.9" />
+<circle cx="90.00" cy="406.26" r="3.0" fill="#795548" /><circle cx="168.18" cy="401.43" r="3.0" fill="#795548" /><circle cx="246.36" cy="393.83" r="3.0" fill="#795548" /><circle cx="324.55" cy="386.22" r="3.0" fill="#795548" /><circle cx="402.73" cy="379.61" r="3.0" fill="#795548" /><circle cx="480.91" cy="377.12" r="3.0" fill="#795548" /><circle cx="559.09" cy="380.26" r="3.0" fill="#795548" /><circle cx="637.27" cy="380.30" r="3.0" fill="#795548" /><circle cx="715.45" cy="382.47" r="3.0" fill="#795548" /><circle cx="793.64" cy="385.47" r="3.0" fill="#795548" /><circle cx="871.82" cy="392.93" r="3.0" fill="#795548" /><circle cx="950.00" cy="396.58" r="3.0" fill="#795548" />
+<line x1="110" x2="138" y1="124" y2="124" stroke="#795548" stroke-width="3"/>
+<text x="146" y="129" font-size="13" font-family="Arial">S00005: S=0.0005, beta=65 deg</text>
+<polyline points="90.00,413.38 168.18,499.26 246.36,436.59 324.55,407.87 402.73,403.94 480.91,402.38 559.09,399.26 637.27,397.16 715.45,392.35 793.64,391.67 871.82,395.09 950.00,401.20" fill="none" stroke="#9c27b0" stroke-width="1.9" />
+<circle cx="90.00" cy="413.38" r="3.0" fill="#9c27b0" /><circle cx="168.18" cy="499.26" r="3.0" fill="#9c27b0" /><circle cx="246.36" cy="436.59" r="3.0" fill="#9c27b0" /><circle cx="324.55" cy="407.87" r="3.0" fill="#9c27b0" /><circle cx="402.73" cy="403.94" r="3.0" fill="#9c27b0" /><circle cx="480.91" cy="402.38" r="3.0" fill="#9c27b0" /><circle cx="559.09" cy="399.26" r="3.0" fill="#9c27b0" /><circle cx="637.27" cy="397.16" r="3.0" fill="#9c27b0" /><circle cx="715.45" cy="392.35" r="3.0" fill="#9c27b0" /><circle cx="793.64" cy="391.67" r="3.0" fill="#9c27b0" /><circle cx="871.82" cy="395.09" r="3.0" fill="#9c27b0" /><circle cx="950.00" cy="401.20" r="3.0" fill="#9c27b0" />
+<line x1="110" x2="138" y1="146" y2="146" stroke="#9c27b0" stroke-width="3"/>
+<text x="146" y="151" font-size="13" font-family="Arial">S00005B5: S=0.0005, beta=5 deg</text>
+<polyline points="90.00,413.62 168.18,461.08 246.36,410.41 324.55,407.69 402.73,405.37 480.91,405.60 559.09,406.91 637.27,404.64 715.45,400.13 793.64,402.49 871.82,395.08 950.00,394.40" fill="none" stroke="#2196f3" stroke-width="1.9" />
+<circle cx="90.00" cy="413.62" r="3.0" fill="#2196f3" /><circle cx="168.18" cy="461.08" r="3.0" fill="#2196f3" /><circle cx="246.36" cy="410.41" r="3.0" fill="#2196f3" /><circle cx="324.55" cy="407.69" r="3.0" fill="#2196f3" /><circle cx="402.73" cy="405.37" r="3.0" fill="#2196f3" /><circle cx="480.91" cy="405.60" r="3.0" fill="#2196f3" /><circle cx="559.09" cy="406.91" r="3.0" fill="#2196f3" /><circle cx="637.27" cy="404.64" r="3.0" fill="#2196f3" /><circle cx="715.45" cy="400.13" r="3.0" fill="#2196f3" /><circle cx="793.64" cy="402.49" r="3.0" fill="#2196f3" /><circle cx="871.82" cy="395.08" r="3.0" fill="#2196f3" /><circle cx="950.00" cy="394.40" r="3.0" fill="#2196f3" />
+<line x1="110" x2="138" y1="168" y2="168" stroke="#2196f3" stroke-width="3"/>
+<text x="146" y="173" font-size="13" font-family="Arial">S00007B5: S=0.0007, beta=5 deg</text>
+<polyline points="90.00,418.93 168.18,420.74 246.36,413.46 324.55,423.26 402.73,412.33 480.91,411.78 559.09,407.39 637.27,403.70 715.45,400.95 793.64,398.96 871.82,397.19 950.00,399.62" fill="none" stroke="#e53935" stroke-width="2.8" />
+<circle cx="90.00" cy="418.93" r="3.0" fill="#e53935" /><circle cx="168.18" cy="420.74" r="3.0" fill="#e53935" /><circle cx="246.36" cy="413.46" r="3.0" fill="#e53935" /><circle cx="324.55" cy="423.26" r="3.0" fill="#e53935" /><circle cx="402.73" cy="412.33" r="3.0" fill="#e53935" /><circle cx="480.91" cy="411.78" r="3.0" fill="#e53935" /><circle cx="559.09" cy="407.39" r="3.0" fill="#e53935" /><circle cx="637.27" cy="403.70" r="3.0" fill="#e53935" /><circle cx="715.45" cy="400.95" r="3.0" fill="#e53935" /><circle cx="793.64" cy="398.96" r="3.0" fill="#e53935" /><circle cx="871.82" cy="397.19" r="3.0" fill="#e53935" /><circle cx="950.00" cy="399.62" r="3.0" fill="#e53935" />
+<line x1="110" x2="138" y1="190" y2="190" stroke="#e53935" stroke-width="3"/>
+<text x="146" y="195" font-size="13" font-family="Arial">S00008B5: S=0.0008, beta=5 deg</text>
+</svg>

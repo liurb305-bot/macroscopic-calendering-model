@@ -1,0 +1,26 @@
+﻿parameter,value,unit_or_note
+elastic_E_MPa,6500.0,MPa
+poisson_ratio,0.01,
+density_tonne_per_mm3,2.55e-09,tonne/mm^3
+cohesion_MPa,0.0032,MPa
+friction_angle_deg,5.0,
+eccentricity,0.8,
+initial_cap_position_MPa,0.048,MPa
+transition_surface_radius,0.02,
+K,1.0,
+
+cap_hardening_pressure_MPa,volumetric_plastic_strain,note
+0.048,0.0,pressure = original * 0.0008
+0.0496,0.05,pressure = original * 0.0008
+0.0528,0.1,pressure = original * 0.0008
+0.0576,0.15,pressure = original * 0.0008
+0.064,0.18,pressure = original * 0.0008
+0.072,0.2,pressure = original * 0.0008
+0.088,0.22,pressure = original * 0.0008
+0.112,0.24,pressure = original * 0.0008
+0.152,0.26,pressure = original * 0.0008
+0.216,0.28,pressure = original * 0.0008
+0.312,0.3,pressure = original * 0.0008
+0.384,0.31,pressure = original * 0.0008
+0.48,0.32,pressure = original * 0.0008
+0.592,0.33,pressure = original * 0.0008

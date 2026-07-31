@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="white"/>
+<text x="80" y="28" font-family="Arial" font-size="18" fill="#111">2 mm rolled segment: thickness and rebound</text>
+<line x1="80" y1="440" x2="860" y2="440" stroke="#333"/>
+<line x1="80" y1="50" x2="80" y2="440" stroke="#333"/>
+<line x1="80" y1="422.68" x2="860" y2="422.68" stroke="#ddd"/>
+<text x="18" y="426.68" font-family="Arial" font-size="12" fill="#333">0.126</text>
+<line x1="80" y1="365.34" x2="860" y2="365.34" stroke="#ddd"/>
+<text x="18" y="369.34" font-family="Arial" font-size="12" fill="#333">0.130</text>
+<line x1="80" y1="293.67" x2="860" y2="293.67" stroke="#ddd"/>
+<text x="18" y="297.67" font-family="Arial" font-size="12" fill="#333">0.135</text>
+<line x1="80" y1="222.00" x2="860" y2="222.00" stroke="#ddd"/>
+<text x="18" y="226.00" font-family="Arial" font-size="12" fill="#333">0.140</text>
+<line x1="80" y1="150.34" x2="860" y2="150.34" stroke="#ddd"/>
+<text x="18" y="154.34" font-family="Arial" font-size="12" fill="#333">0.145</text>
+<line x1="80" y1="78.67" x2="860" y2="78.67" stroke="#ddd"/>
+<text x="18" y="82.67" font-family="Arial" font-size="12" fill="#333">0.150</text>
+<line x1="48.80" y1="50" x2="48.80" y2="440" stroke="#ddd"/>
+<text x="48.80" y="462" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">-2.0</text>
+<line x1="251.60" y1="50" x2="251.60" y2="440" stroke="#ddd"/>
+<text x="251.60" y="462" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">-1.5</text>
+<line x1="454.40" y1="50" x2="454.40" y2="440" stroke="#ddd"/>
+<text x="454.40" y="462" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">-1.0</text>
+<line x1="657.20" y1="50" x2="657.20" y2="440" stroke="#ddd"/>
+<text x="657.20" y="462" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">-0.5</text>
+<line x1="860.00" y1="50" x2="860.00" y2="440" stroke="#ddd"/>
+<text x="860.00" y="462" font-family="Arial" font-size="12" fill="#333" text-anchor="middle">0.0</text>
+<line x1="80" y1="293.67" x2="860" y2="293.67" stroke="#2ca02c" stroke-dasharray="6 4"/>
+<line x1="80" y1="78.67" x2="860" y2="78.67" stroke="#999" stroke-dasharray="3 4"/>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2.5" points="80.00,245.59 204.80,284.41 329.60,323.29 454.40,359.57 589.60,385.93 724.80,403.90 860.00,411.33"/>
+<polyline fill="none" stroke="#d62728" stroke-width="2.0" points="80.00,245.59 204.80,284.41 329.60,323.29 454.40,359.57 589.60,385.93 724.80,403.90 860.00,411.33"/>
+<text x="655" y="60" font-family="Arial" font-size="13" fill="#1f77b4">final mean thickness</text>
+<text x="655" y="80" font-family="Arial" font-size="13" fill="#d62728">minimum during rolling</text>
+<text x="655" y="100" font-family="Arial" font-size="13" fill="#2ca02c">target 0.135 mm</text>
+<text x="470" y="495" font-family="Arial" font-size="14" fill="#111" text-anchor="middle">initial x0 in rolled 2 mm segment (mm)</text>
+<text x="20" y="260" font-family="Arial" font-size="14" fill="#111" transform="rotate(-90 20,260)" text-anchor="middle">thickness (mm)</text>
+</svg>

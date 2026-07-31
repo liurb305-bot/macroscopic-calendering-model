@@ -1,0 +1,13 @@
+job=RP3D_Self_DPC_S030_50mm_Roll10mm_dt5e6_CoarseRoller_V2p2
+
+[step] Clamp_Down
+Node ASSEMBLY.1 RF2 final=0.207483768 N maxabs=14.9848804 N at t=0.0108049847 s value=-14.9848804 N
+Node ASSEMBLY.2 RF2 final=0 N maxabs=0 N at t=0 s value=0 N
+
+[step] Hold_Clamp
+Node ASSEMBLY.1 RF2 final=-0.288866311 N maxabs=0.354953229 N at t=0.000604999892 s value=0.354953229 N
+Node ASSEMBLY.2 RF2 final=0 N maxabs=0 N at t=0 s value=0 N
+
+[step] Rolling
+Node ASSEMBLY.1 RF2 final=3.84085655 N maxabs=28.4219017 N at t=0.189002231 s value=-28.4219017 N
+Node ASSEMBLY.2 RF2 final=-3.7077167 N maxabs=24.1974697 N at t=0.210003674 s value=24.1974697 N

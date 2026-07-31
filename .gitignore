@@ -4,8 +4,21 @@ abaqus*.rec
 abq.app_cache
 *.jnl
 *.com
+*.cid
 *.prt
+*.abq
+*.dat
+*.ipm
+*.log
+*.mdl
+*.msg
+*.odb
+*.pac
+*.res
+*.sel
 *.sim
+*.simlog
+*.sta
 *.stt
 *.lck
 

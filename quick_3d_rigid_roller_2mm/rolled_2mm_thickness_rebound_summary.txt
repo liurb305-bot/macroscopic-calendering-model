@@ -1,0 +1,66 @@
+2 mm rolled segment thickness and rebound check
+ODB: E:\abaqus\3D50mm\RollPress_3D_SelfSupport_DiffSpeed_DPC_S00008B5_50mm_Roll2mm_RigidRoller_Stable.odb
+Instance: ACTIVELAYER-1
+Step: Rolling, frames=81, final frame time=0.150000006 s
+Selection: initial x0 in [-2.000, 0.000] mm, paired top/bottom surface columns by initial (x,z).
+Initial thickness from surface nodes: 0.150000006 mm
+Target thickness: 0.135000000 mm
+
+[nominal_rolled_segment_initial_x_-2_to_0]
+columns: 287
+final_thickness_mm: count=287, min=0.126781732, p05=0.126784658, mean=0.131428976, p50=0.130404711, p95=0.138357966, max=0.138381258
+min_thickness_during_rolling_mm: count=287, min=0.126781732, p05=0.126784658, mean=0.131428976, p50=0.130404711, p95=0.138357966, max=0.138381258
+final_reduction_pct: count=287, min=7.745832205, p05=7.761360034, mean=12.380686060, p50=13.063529134, p95=15.476897508, max=15.478849411
+min_reduction_pct: count=287, min=7.745832205, p05=7.761360034, mean=12.380686060, p50=13.063529134, p95=15.476897508, max=15.478849411
+rebound_final_minus_min_mm: count=287, min=0.000000000, p05=0.000000000, mean=0.000000000, p50=0.000000000, p95=0.000000000, max=0.000000000
+columns_final_le_target: 205
+columns_final_gt_target: 82
+columns_rebound_gt_0.0001mm: 0
+columns_rebound_gt_0.001mm: 0
+columns_minimum_occurs_at_final_frame: 287
+
+[outlet_side_at_final_xdef_gt_0_within_initial_x_-2_to_0]
+columns: 82
+final_thickness_mm: count=82, min=0.126781732, p05=0.126784210, mean=0.127050577, p50=0.127073213, p95=0.127325656, max=0.127357692
+min_thickness_during_rolling_mm: count=82, min=0.126781732, p05=0.126784210, mean=0.127050577, p50=0.127073213, p95=0.127325656, max=0.127357692
+final_reduction_pct: count=82, min=15.094876289, p05=15.116232634, mean=15.299618808, p50=15.284527838, p95=15.477196872, max=15.478849411
+min_reduction_pct: count=82, min=15.094876289, p05=15.116232634, mean=15.299618808, p50=15.284527838, p95=15.477196872, max=15.478849411
+rebound_final_minus_min_mm: count=82, min=0.000000000, p05=0.000000000, mean=0.000000000, p50=0.000000000, p95=0.000000000, max=0.000000000
+columns_final_le_target: 82
+columns_final_gt_target: 0
+columns_rebound_gt_0.0001mm: 0
+columns_rebound_gt_0.001mm: 0
+columns_minimum_occurs_at_final_frame: 82
+
+[near_target_final_0p133_to_0p137_within_initial_x_-2_to_0]
+columns: 41
+final_thickness_mm: count=41, min=0.135636061, p05=0.135638610, mean=0.135646516, p50=0.135646909, p95=0.135653570, max=0.135654375
+min_thickness_during_rolling_mm: count=41, min=0.135636061, p05=0.135638610, mean=0.135646516, p50=0.135646909, p95=0.135653570, max=0.135654375
+final_reduction_pct: count=41, min=9.563753754, p05=9.564290196, mean=9.568993184, p50=9.568730742, p95=9.574263543, max=9.575962275
+min_reduction_pct: count=41, min=9.563753754, p05=9.564290196, mean=9.568993184, p50=9.568730742, p95=9.574263543, max=9.575962275
+rebound_final_minus_min_mm: count=41, min=0.000000000, p05=0.000000000, mean=0.000000000, p50=0.000000000, p95=0.000000000, max=0.000000000
+columns_final_le_target: 0
+columns_final_gt_target: 41
+columns_rebound_gt_0.0001mm: 0
+columns_rebound_gt_0.001mm: 0
+columns_minimum_occurs_at_final_frame: 41
+
+[station_by_initial_x]
+x0=-1.92307675, n=41, x_final_mean=-1.83159661, final_mean=0.138354743, final_min=0.138341352, final_max=0.138381258, min_time_mean=0.138354743, rebound_mean=0.000000000, n_le_target=0
+x0=-1.61538470, n=41, x_final_mean=-1.49031878, final_mean=0.135646516, final_min=0.135636061, final_max=0.135654375, min_time_mean=0.135646516, rebound_mean=0.000000000, n_le_target=0
+x0=-1.30769229, n=41, x_final_mean=-1.14097159, final_mean=0.132934012, final_min=0.132924139, final_max=0.132945627, min_time_mean=0.132934012, rebound_mean=0.000000000, n_le_target=41
+x0=-1.00000000, n=41, x_final_mean=-0.78333027, final_mean=0.130402598, final_min=0.130381078, final_max=0.130415142, min_time_mean=0.130402598, rebound_mean=0.000000000, n_le_target=41
+x0=-0.66666669, n=41, x_final_mean=-0.38782162, final_mean=0.128563809, final_min=0.128543213, final_max=0.128572822, min_time_mean=0.128563809, rebound_mean=0.000000000, n_le_target=41
+x0=-0.33333334, n=41, x_final_mean=0.01402010, final_mean=0.127309749, final_min=0.127298415, final_max=0.127357692, min_time_mean=0.127309749, rebound_mean=0.000000000, n_le_target=41
+x0=0.00000000, n=41, x_final_mean=0.42021545, final_mean=0.126791405, final_min=0.126781732, final_max=0.126848012, min_time_mean=0.126791405, rebound_mean=0.000000000, n_le_target=41
+
+[time_series_selected_segment]
+frame=0, rolling_time=0.000000000, min=0.148268282, mean=0.149048825, max=0.149754867
+frame=1, rolling_time=0.001877132, min=0.148078740, mean=0.148930568, max=0.149719417
+frame=2, rolling_time=0.003753841, min=0.147887930, mean=0.148807854, max=0.149681643
+frame=20, rolling_time=0.037500817, min=0.143784434, mean=0.145879755, max=0.148430869
+frame=40, rolling_time=0.075001888, min=0.138374656, mean=0.141549389, max=0.145865709
+frame=60, rolling_time=0.112501495, min=0.132623687, mean=0.136628701, max=0.142400742
+frame=78, rolling_time=0.146253914, min=0.127364740, mean=0.131955171, max=0.138800800
+frame=79, rolling_time=0.148129359, min=0.127072841, mean=0.131691870, max=0.138591155
+frame=80, rolling_time=0.150000006, min=0.126781732, mean=0.131428976, max=0.138381258

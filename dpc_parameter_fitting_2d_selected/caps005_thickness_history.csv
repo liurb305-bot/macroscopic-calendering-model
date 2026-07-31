@@ -1,0 +1,1 @@
+﻿scale,job_name,step,frame_index,step_time_s,total_time_s,top_u2_mm,top_rf2_N,avg_thickness_um,min_thickness_um,max_thickness_um,max_cpress_MPa,max_compressive_press_MPa,max_signed_plastic_vol_strain,min_signed_plastic_vol_strain,max_abs_plastic_vol_strain,unloaded_zero_force_frame
