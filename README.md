@@ -9,6 +9,9 @@ calendering models built in `E:\abaqus`.
   files, completed ODB, postprocessing scripts, and extracted result figures.
 - `3D/`: visible roll + electrode assembly models for later continuous rolling
   setup, including a true-size model and a clear display model.
+- `3D3/`: original full-size 3D 10% thickness-reduction roll-press model,
+  including the build script, CAE/INP files, smoke input, and rolling-force
+  extraction script.
 - `latest_3d_s030_self_support_50mm/`: latest self-supporting film 3D DPC
   calendering model with deformable rollers, `S=0.3` cap hardening, 50 mm sheet
   length, 10 mm rolling stability-check setup, postprocessing scripts, and
