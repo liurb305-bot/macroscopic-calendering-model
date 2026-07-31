@@ -12,6 +12,9 @@ calendering models built in `E:\abaqus`.
 - `3D3/`: original full-size 3D 10% thickness-reduction roll-press model,
   including the build script, CAE/INP files, smoke input, and rolling-force
   extraction script.
+- `3D辊压刚性辊子/`: V3p0 3D double-coat differential-speed roll-press model
+  with analytic rigid rollers, including the build script, CAE, INP, and run
+  notes.
 - `latest_3d_s030_self_support_50mm/`: latest self-supporting film 3D DPC
   calendering model with deformable rollers, `S=0.3` cap hardening, 50 mm sheet
   length, 10 mm rolling stability-check setup, postprocessing scripts, and
