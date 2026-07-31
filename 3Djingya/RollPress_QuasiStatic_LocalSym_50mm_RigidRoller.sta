@@ -1,0 +1,253 @@
+Abaqus/Explicit 2025                             DATE 23-Jun-2026  TIME 12:09:51
+-------------------------------------------------------------------------------
+ PREPROCESSOR WARNING MESSAGES
+-------------------------------------------------------------------------------
+
+
+***WARNING: There are 2 warning messages in the data (.dat) file.  Please
+            check the data file for possible errors in the input file.
+
+
+-------------------------------------------------------------------------------
+ NUMERICAL PRECISION USED FOR THIS Abaqus/Explicit ANALYSIS
+-------------------------------------------------------------------------------
+
+Single precision package and explicit executables will be used in this analysis.
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+ MODEL INFORMATION (IN GLOBAL X-Y COORDINATES)
+-------------------------------------------------------------------------------
+
+   Total mass in model = 4.78125E-07
+   Center of mass of model = ( 2.500000E+01, 7.500000E-02, 1.250000E+01)
+
+    Moments of Inertia :
+                 About Center of Mass              About Origin
+      I(XX)          2.521064E-05                  9.992036E-05
+      I(YY)          1.253171E-04                  4.988523E-04
+      I(ZZ)          1.001084E-04                  3.989392E-04
+      I(XY)          1.664511E-14                 -8.964844E-07
+      I(YZ)          1.122762E-14                 -4.482422E-07
+      I(ZX)         -1.493899E-12                 -1.494141E-04
+
+-------------------------------------------------------------------------------
+ STABLE TIME INCREMENT INFORMATION
+-------------------------------------------------------------------------------
+
+
+  The stable time increment estimate for each element is based on
+  linearization about the initial state.
+
+
+   Initial time increment = 1.76224E-08
+
+   Statistics over 2000 deformable elements:
+      Mean = 1.76733E-08
+      Standard deviation = 4.86250E-11
+
+   Most critical elements:
+    Element number   Rank    Time increment   Increment ratio
+    (Instance name)
+   ----------------------------------------------------------
+        1702          1       1.762243E-08      1.000000E+00
+    ACTIVELAYER-1
+        1704          2       1.762243E-08      1.000000E+00
+    ACTIVELAYER-1
+        1709          3       1.762243E-08      1.000000E+00
+    ACTIVELAYER-1
+        1712          4       1.762243E-08      1.000000E+00
+    ACTIVELAYER-1
+        1714          5       1.762243E-08      1.000000E+00
+    ACTIVELAYER-1
+        1717          6       1.762243E-08      1.000000E+00
+    ACTIVELAYER-1
+        1719          7       1.762243E-08      1.000000E+00
+    ACTIVELAYER-1
+        1724          8       1.762243E-08      1.000000E+00
+    ACTIVELAYER-1
+        1727          9       1.762243E-08      1.000000E+00
+    ACTIVELAYER-1
+        1729         10       1.762243E-08      1.000000E+00
+    ACTIVELAYER-1
+
+
+  Instance name for the most critical element will be printed if the critical
+  element changes or at the beginning of a new page.
+
+
+-------------------------------------------------------------------------------
+
+  INFORMATION REGARDING INITIAL CONTACT OVERCLOSURES FOR NEWLY DEFINED GENERAL
+  CONTACT INTERACTIONS IN STEP 1
+
+-------------------------------------------------------------------------------
+
+  No initial node-face or edge-edge overclosures found.
+
+
+  No nodal position adjustments have been made.
+
+
+  No unresolved initial node-face or edge-edge overclosures found.
+
+
+***NOTE: You can view the deformed configuration due to the resolution of
+         initial overclosures.  In increment 0, draw the deformed shape or
+         draw a symbol plot of vector displacements.
+
+------------------------------------------------------------------------------
+
+Abaqus/Explicit 2025                             DATE 23-Jun-2026  TIME 12:09:53
+The entire model is considered 1 domain.
+Only 1 MPI rank is used.
+
+-------------------------------------------------------------------------------
+ SOLUTION PROGRESS
+-------------------------------------------------------------------------------
+
+ STEP 1  ORIGIN 0.0000
+
+  Total memory used for step 1 is approximately 17.3 megabytes.
+  Global time estimation algorithm will be used.
+  Scaling factor:  1.0000
+              STEP     TOTAL      WALL        STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME     INCREMENT     ELEMENT     ENERGY     ENERGY
+        0  0.000E+00 0.000E+00  00:00:00 1.68023E-08        1729  0.000E+00  0.000E+00
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number     0, of     40, at step time 0.000E+00
+     1488  2.500E-05 2.500E-05  00:00:02 1.68023E-08        1850  1.168E-07  1.727E-09
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number     1, of     40, at step time 2.500E-05
+     2976  5.001E-05 5.001E-05  00:00:04 1.68021E-08        1801  1.576E-07  2.702E-09
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number     2, of     40, at step time 5.001E-05
+     4464  7.501E-05 7.501E-05  00:00:05 1.68017E-08        1834  2.547E-07  3.506E-09
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number     3, of     40, at step time 7.501E-05
+     5952  1.000E-04 1.000E-04  00:00:07 1.68003E-08        1805  5.462E-07  6.021E-09
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number     4, of     40, at step time 1.000E-04
+     7441  1.250E-04 1.250E-04  00:00:08 1.67949E-08        2000  1.918E-06  1.070E-08
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number     5, of     40, at step time 1.250E-04
+     8930  1.500E-04 1.500E-04  00:00:10 1.67881E-08        1996  2.438E-06  1.030E-08
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number     6, of     40, at step time 1.500E-04
+    10419  1.750E-04 1.750E-04  00:00:12 1.67578E-08        1847  4.134E-06  3.746E-08
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number     7, of     40, at step time 1.750E-04
+    11907  2.000E-04 2.000E-04  00:00:13 1.67955E-08        1766  5.360E-06  3.752E-09
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number     8, of     40, at step time 2.000E-04
+    13395  2.250E-04 2.250E-04  00:00:15 1.67921E-08        1811  7.227E-06  1.440E-09
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number     9, of     40, at step time 2.250E-04
+    14882  2.500E-04 2.500E-04  00:00:17 1.67878E-08        1946  1.006E-05  3.760E-08
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    10, of     40, at step time 2.500E-04
+    16370  2.750E-04 2.750E-04  00:00:18 1.67838E-08        1946  1.471E-05  1.865E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    11, of     40, at step time 2.750E-04
+    17857  3.000E-04 3.000E-04  00:00:20 1.67778E-08        1946  2.141E-05  3.735E-08
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    12, of     40, at step time 3.000E-04
+    19344  3.250E-04 3.250E-04  00:00:21 1.67694E-08        1946  2.730E-05  8.749E-08
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    13, of     40, at step time 3.250E-04
+    20831  3.500E-04 3.500E-04  00:00:23 1.67633E-08        1781  3.474E-05  2.064E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    14, of     40, at step time 3.500E-04
+    22317  3.750E-04 3.750E-04  00:00:24 1.67534E-08        1781  4.213E-05  4.524E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    15, of     40, at step time 3.750E-04
+    23801  4.000E-04 4.000E-04  00:00:26 1.75651E-08        1871  4.805E-05  4.110E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    16, of     40, at step time 4.000E-04
+    25283  4.250E-04 4.250E-04  00:00:28 1.75800E-08        1859  5.730E-05  3.248E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    17, of     40, at step time 4.250E-04
+    26759  4.500E-04 4.500E-04  00:00:29 1.67265E-08        1886  6.760E-05  2.652E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    18, of     40, at step time 4.500E-04
+    28221  4.750E-04 4.750E-04  00:00:31 1.76559E-08        1733  7.909E-05  7.269E-08
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    19, of     40, at step time 4.750E-04
+    29681  5.000E-04 5.000E-04  00:00:33 1.76568E-08        1702  8.996E-05 -2.668E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    20, of     40, at step time 5.000E-04
+    31138  5.250E-04 5.250E-04  00:00:34 1.76602E-08        1897  1.022E-04 -2.934E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    21, of     40, at step time 5.250E-04
+    32591  5.500E-04 5.500E-04  00:00:36 1.66702E-08        1856  1.150E-04 -4.960E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    22, of     40, at step time 5.500E-04
+    34042  5.750E-04 5.750E-04  00:00:37 1.76632E-08        1883  1.262E-04 -7.632E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    23, of     40, at step time 5.750E-04
+    35497  6.000E-04 6.000E-04  00:00:39 1.75006E-08        1889  1.376E-04 -6.862E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    24, of     40, at step time 6.000E-04
+    36949  6.250E-04 6.250E-04  00:00:41 1.66170E-08        1946  1.514E-04 -6.245E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    25, of     40, at step time 6.250E-04
+    38405  6.500E-04 6.500E-04  00:00:42 1.76727E-08        1897  1.632E-04 -2.069E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    26, of     40, at step time 6.500E-04
+    39863  6.750E-04 6.750E-04  00:00:44 1.76715E-08        1733  1.751E-04  1.149E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    27, of     40, at step time 6.750E-04
+    41319  7.000E-04 7.000E-04  00:00:45 1.76737E-08        1733  1.868E-04  5.375E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    28, of     40, at step time 7.000E-04
+    42755  7.250E-04 7.250E-04  00:00:47 1.76771E-08        1883  1.988E-04  2.004E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    29, of     40, at step time 7.250E-04
+    44190  7.500E-04 7.500E-04  00:00:49 1.65376E-08        1883  2.088E-04  1.088E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    30, of     40, at step time 7.500E-04
+    45643  7.750E-04 7.750E-04  00:00:50 1.65267E-08        1946  2.146E-04  1.535E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    31, of     40, at step time 7.750E-04
+    47102  8.000E-04 8.000E-04  00:00:52 1.76792E-08        1733  2.207E-04 -1.508E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    32, of     40, at step time 8.000E-04
+    48555  8.250E-04 8.250E-04  00:00:53 1.76786E-08        1705  2.268E-04 -2.330E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    33, of     40, at step time 8.250E-04
+    50011  8.500E-04 8.500E-04  00:00:55 1.65103E-08        1721  2.304E-04 -1.916E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    34, of     40, at step time 8.500E-04
+    51472  8.750E-04 8.750E-04  00:00:56 1.76754E-08        1883  2.304E-04 -3.332E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    35, of     40, at step time 8.750E-04
+    52925  9.000E-04 9.000E-04  00:00:58 1.76728E-08        1705  2.294E-04 -2.273E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    36, of     40, at step time 9.000E-04
+    54443  9.250E-04 9.250E-04  00:00:59 1.64530E-08        1946  2.257E-04 -2.410E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    37, of     40, at step time 9.250E-04
+    55981  9.500E-04 9.500E-04  00:01:01 1.53423E-08        1970  2.174E-04 -1.010E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    38, of     40, at step time 9.500E-04
+    57592  9.750E-04 9.750E-04  00:01:03 1.52859E-08        1940  2.038E-04 -1.119E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Output Field Frame Number    39, of     40, at step time 9.750E-04
+
+ STEP 1  ORIGIN 0.0000
+
+              STEP     TOTAL      WALL        STABLE    CRITICAL    KINETIC      TOTAL
+INCREMENT     TIME      TIME      TIME     INCREMENT     ELEMENT     ENERGY     ENERGY
+    59228  1.000E-03 1.000E-03  00:01:05 1.53000E-08        1835  1.877E-04 -1.155E-07
+INSTANCE WITH CRITICAL ELEMENT: ACTIVELAYER-1
+Restart Number  1 at 1.00000E-03
+Output Field Frame Number    40, of     40, at step time 1.000E-03
+  EXPLICIT EXECUTABLE TIME SUMMARY
+       USER TIME (SEC)      =   63.200
+       SYSTEM TIME (SEC)    =  0.70000
+       WALLCLOCK TIME (SEC) =           65
+              INIT (SEC) =          0
+              MAIN (SEC) =         65
+
+  THE ANALYSIS HAS COMPLETED SUCCESSFULLY
+

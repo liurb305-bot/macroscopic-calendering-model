@@ -1,0 +1,223 @@
+1
+
+   Abaqus 2025                                  Date 23-Jun-2026   Time 12:09:47
+   For use by Supplied by Team-SolidSQUAD under license from Dassault Systemes or its subsidiary.
+
+
+
+                         The Abaqus Software is a product of:
+
+                           Dassault Systemes Americas Corp.
+                           1301 Atwood Avenue, Suite 101W
+                              Johnston, RI 02919, USA
+ 
+
+
+                   The Abaqus Software is available only under license
+                   from Dassault Systemes or its subsidiary and may be
+                   used or reproduced only in accordance with the terms
+                   of such license.
+ 
+                          On machine DESKTOP-GGBRE6U 
+                          you are authorized to run
+                          Abaqus/Explicit until 31-Dec-2055
+
+                          Your site id is:  
+
+
+ 
+                    For assistance or any other information you may
+                    obtain contact information for your local office
+                    from the world wide web at:
+
+                      https://www.3ds.com/products-services/simulia/services-support/
+
+ 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+                *                                                         * 
+                *                   *****************                     * 
+                *                   *  N O T I C E  *                     * 
+                *                   *****************                     * 
+                *                                                         * 
+                *                                                         * 
+                *                       Abaqus 2025                       * 
+                *                                                         * 
+                *       BUILD ID: 2024_09_20-21.00.46 RELr427 198590      * 
+                *                                                         * 
+                *                                                         * 
+                *  Please make sure you are using                         * 
+                *  release Abaqus 2025 manuals                            * 
+                *  plus the notes accompanying this release.              * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+
+ 
+
+
+
+     PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   *******************************************************
+
+
+     END PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   ***********************************************************
+
+
+
+
+     OPTIONS BEING PROCESSED
+   ***************************
+
+
+  *Element, type=C3D8R
+  *Elset, elset=ASSEMBLY_ACTIVELAYER-1_XSYMFACE
+  *Elset, elset=ASSEMBLY_ACTIVELAYER-1_ZSYMFACE
+  *Elset, elset=ASSEMBLY_ACTIVELAYER-1__BOTTOM_S4
+  *Elset, elset=ASSEMBLY_ACTIVELAYER-1__BOTTOM_S6
+  *Elset, elset=ASSEMBLY_ACTIVELAYER-1__PICKEDSET8
+  *Elset, elset=ASSEMBLY_ACTIVELAYER-1__TOP_S4
+  *Elset, elset=ASSEMBLY_ACTIVELAYER-1__TOP_S6
+  *Element, type=R3D4
+  *Elset, elset=ASSEMBLY_LOWERROLLER-1__CONTACTFACE_SNEG
+  *Element, type=R3D4
+  *Elset, elset=ASSEMBLY_UPPERROLLER-1__CONTACTFACE_SNEG
+  *Elset, elset=ASSEMBLY_SHEET_ALL
+  *Elset, elset=ASSEMBLY_SHEET_XSYMFACE
+  *Elset, elset=ASSEMBLY_SHEET_ZSYMFACE
+  *Elset, elset=ASSEMBLY__LOWERROLLER_CONTACT_SNEG
+  *Elset, elset=ASSEMBLY__LOWERROLLER_CONTACT_SPOS
+  *Elset, elset=ASSEMBLY__PICKEDSET19
+  *Elset, elset=ASSEMBLY__PICKEDSET20
+  *Elset, elset=ASSEMBLY__SHEET_BOTTOM_S4
+  *Elset, elset=ASSEMBLY__SHEET_BOTTOM_S6
+  *Elset, elset=ASSEMBLY__SHEET_TOP_S4
+  *Elset, elset=ASSEMBLY__SHEET_TOP_S6
+  *Elset, elset=ASSEMBLY__UPPERROLLER_CONTACT_SNEG
+  *Elset, elset=ASSEMBLY__UPPERROLLER_CONTACT_SPOS
+  *heading
+          Local static symmetric normal press model with rigid rollers                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+  *material, name=ACTIVELAYER_POROUS_CALIBRATABLE
+  *capplasticity
+  *caphardening
+  *density
+  *elastic
+  *solidsection, elset=ASSEMBLY_ACTIVELAYER-1__PICKEDSET8, material=ACTIVELAYER_POROUS_CALIBRATABLE
+  *solidsection, elset=ASSEMBLY_ACTIVELAYER-1__PICKEDSET8, material=ACTIVELAYER_POROUS_CALIBRATABLE
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *surface, type=ELEMENT, name=ASSEMBLY_ACTIVELAYER-1_TOP
+  *surface, type=ELEMENT, name=ASSEMBLY_ACTIVELAYER-1_BOTTOM
+  *surface, type=ELEMENT, name=ASSEMBLY_LOWERROLLER-1_CONTACTFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_UPPERROLLER-1_CONTACTFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_LOWERROLLER_CONTACT
+  *surface, type=ELEMENT, name=ASSEMBLY_SHEET_BOTTOM
+  *surface, type=ELEMENT, name=ASSEMBLY_SHEET_TOP
+  *surface, type=ELEMENT, name=ASSEMBLY_UPPERROLLER_CONTACT
+  *surface, type=ELEMENT, name=ASSEMBLY_ACTIVELAYER-1_TOP
+  *surface, type=ELEMENT, name=ASSEMBLY_ACTIVELAYER-1_BOTTOM
+  *surface, type=ELEMENT, name=ASSEMBLY_LOWERROLLER-1_CONTACTFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_UPPERROLLER-1_CONTACTFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_LOWERROLLER_CONTACT
+  *surface, type=ELEMENT, name=ASSEMBLY_SHEET_BOTTOM
+  *surface, type=ELEMENT, name=ASSEMBLY_SHEET_TOP
+  *surface, type=ELEMENT, name=ASSEMBLY_UPPERROLLER_CONTACT
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *surfaceinteraction, name=CONTACT_ROLLER_ACTIVE_MU0P1
+  *friction
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *boundary, amplitude=AMP_UPPER_DROP
+  *solidsection, elset=ASSEMBLY_ACTIVELAYER-1__PICKEDSET8, material=ACTIVELAYER_POROUS_CALIBRATABLE
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *friction
+  *elementoutput, elset=ASSEMBLY_SHEET_ALL, directions=YES
+  *output, field, numberinterval=40
+  *output, history, timeinterval=1e-05
+  *output, history, variable=PRESELECT
+  *step, name=Press_Down, nlgeom=YES
+  *step, name=Press_Down, nlgeom=YES
+  *dynamic, explicit
+  *boundary, amplitude=AMP_UPPER_DROP
+  *output, field, numberinterval=40
+  *nodeoutput, nset=ASSEMBLY_SHEET_ALL, variable=PRESELECT
+  *elementoutput, elset=ASSEMBLY_SHEET_ALL, directions=YES
+  *contactoutput, variable=PRESELECT
+  *output, history, timeinterval=1e-05
+  *energyoutput
+  *nodeoutput, nset=ASSEMBLY_RP_LOWERROLLER
+  *nodeoutput, nset=ASSEMBLY_RP_UPPERROLLER
+  *output, history, variable=PRESELECT
+  *endstep
+  *surface, type=ELEMENT, name=ASSEMBLY_ACTIVELAYER-1_TOP
+  *surface, type=ELEMENT, name=ASSEMBLY_ACTIVELAYER-1_BOTTOM
+  *surface, type=ELEMENT, name=ASSEMBLY_LOWERROLLER-1_CONTACTFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_UPPERROLLER-1_CONTACTFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_LOWERROLLER_CONTACT
+  *surface, type=ELEMENT, name=ASSEMBLY_SHEET_BOTTOM
+  *surface, type=ELEMENT, name=ASSEMBLY_SHEET_TOP
+  *surface, type=ELEMENT, name=ASSEMBLY_UPPERROLLER_CONTACT
+  *surfaceinteraction, name=CONTACT_ROLLER_ACTIVE_MU0P1
+  *friction
+  *surfacebehavior, pressure-overclosure=HARD
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *contact, op=NEW
+
+ ***WARNING: OP=NEW on *CONTACT is ignored when the general contact definition 
+             is specified as model data.
+  *contactinclusions, allexterior
+  *contactpropertyassignment
+  *step, name=Press_Down, nlgeom=YES
+  *dynamic, explicit
+  *boundary, amplitude=AMP_UPPER_DROP
+
+ ***WARNING: THE OPTION *BOUNDARY,TYPE=DISPLACEMENT HAS BEEN USED; CHECK STATUS 
+             FILE BETWEEN STEPS FOR WARNINGS ON ANY JUMPS PRESCRIBED ACROSS THE 
+             STEPS IN DISPLACEMENT VALUES OF TRANSLATIONAL DOF. FOR ROTATIONAL 
+             DOF MAKE SURE THAT THERE ARE NO SUCH JUMPS. ALL JUMPS IN 
+             DISPLACEMENTS ACROSS STEPS ARE IGNORED
+  *endstep
+
+
+
+                            P R O B L E M   S I Z E
+
+
+          NUMBER OF ELEMENTS IS                                  3792
+          NUMBER OF NODES IS                                     4568
+          NUMBER OF NODES DEFINED BY THE USER                    4568
+          TOTAL NUMBER OF VARIABLES IN THE MODEL                13710
+          (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
+           VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
+
+
+
+                              END OF USER INPUT PROCESSING
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =     0.20    
+       SYSTEM TIME (SEC)    =     0.10    
+       TOTAL CPU TIME (SEC) =     0.30    
+       WALLCLOCK TIME (SEC) =            1

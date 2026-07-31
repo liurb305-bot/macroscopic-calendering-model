@@ -1,0 +1,453 @@
+1
+
+   Abaqus 2025                                  Date 23-Jun-2026   Time 04:30:39
+   For use by Supplied by Team-SolidSQUAD under license from Dassault Systemes or its subsidiary.
+
+
+
+                         The Abaqus Software is a product of:
+
+                           Dassault Systemes Americas Corp.
+                           1301 Atwood Avenue, Suite 101W
+                              Johnston, RI 02919, USA
+ 
+
+
+                   The Abaqus Software is available only under license
+                   from Dassault Systemes or its subsidiary and may be
+                   used or reproduced only in accordance with the terms
+                   of such license.
+ 
+                          On machine DESKTOP-GGBRE6U 
+                          you are authorized to run
+                          Abaqus/Standard until 31-Dec-2055
+
+                          Your site id is:  
+
+
+ 
+                    For assistance or any other information you may
+                    obtain contact information for your local office
+                    from the world wide web at:
+
+                      https://www.3ds.com/products-services/simulia/services-support/
+
+ 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+                *                                                         * 
+                *                   *****************                     * 
+                *                   *  N O T I C E  *                     * 
+                *                   *****************                     * 
+                *                                                         * 
+                *                                                         * 
+                *                       Abaqus 2025                       * 
+                *                                                         * 
+                *       BUILD ID: 2024_09_20-21.00.46 RELr427 198590      * 
+                *                                                         * 
+                *                                                         * 
+                *  Please make sure you are using                         * 
+                *  release Abaqus 2025 manuals                            * 
+                *  plus the notes accompanying this release.              * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+
+ 
+
+
+
+     PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   *******************************************************
+
+
+     END PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   ***********************************************************
+
+
+
+
+     OPTIONS BEING PROCESSED
+   ***************************
+
+
+  *Element, type=C3D8R
+  *Elset, elset=ASSEMBLY_ACTIVELAYER-1_XSYMFACE
+  *Elset, elset=ASSEMBLY_ACTIVELAYER-1_ZSYMFACE
+  *Elset, elset=ASSEMBLY_ACTIVELAYER-1__BOTTOM_S4
+  *Elset, elset=ASSEMBLY_ACTIVELAYER-1__BOTTOM_S6
+  *Elset, elset=ASSEMBLY_ACTIVELAYER-1__PICKEDSET8
+  *Elset, elset=ASSEMBLY_ACTIVELAYER-1__TOP_S4
+  *Elset, elset=ASSEMBLY_ACTIVELAYER-1__TOP_S6
+  *Element, type=R3D4
+  *Elset, elset=ASSEMBLY_LOWERROLLER-1__CONTACTFACE_SNEG
+  *Element, type=R3D4
+  *Elset, elset=ASSEMBLY_UPPERROLLER-1__CONTACTFACE_SNEG
+  *Elset, elset=ASSEMBLY_SHEET_ALL
+  *Elset, elset=ASSEMBLY_SHEET_XSYMFACE
+  *Elset, elset=ASSEMBLY_SHEET_ZSYMFACE
+  *Elset, elset=ASSEMBLY__LOWERROLLER_CONTACT_SNEG
+  *Elset, elset=ASSEMBLY__LOWERROLLER_CONTACT_SPOS
+  *Elset, elset=ASSEMBLY__PICKEDSET19
+  *Elset, elset=ASSEMBLY__PICKEDSET20
+  *Elset, elset=ASSEMBLY__SHEET_BOTTOM_S4
+  *Elset, elset=ASSEMBLY__SHEET_BOTTOM_S6
+  *Elset, elset=ASSEMBLY__SHEET_TOP_S4
+  *Elset, elset=ASSEMBLY__SHEET_TOP_S6
+  *Elset, elset=ASSEMBLY__UPPERROLLER_CONTACT_SNEG
+  *Elset, elset=ASSEMBLY__UPPERROLLER_CONTACT_SPOS
+  *Elset, elset=ASSEMBLY___GENERALCONTACT_ROLLERSHEET_GCS0_22_SPOS
+  *Elset, elset=ASSEMBLY___GENERALCONTACT_ROLLERSHEET_GCS0_23_SNEG
+  *Elset, elset=ASSEMBLY___GENERALCONTACT_ROLLERSHEET_GCS0_24_SPOS
+  *Elset, elset=ASSEMBLY___GENERALCONTACT_ROLLERSHEET_GCS0_25_SNEG
+  *heading
+          Local static symmetric normal press model with rigid rollers                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+  *material, name=ACTIVELAYER_POROUS_CALIBRATABLE
+  *capplasticity
+  *caphardening
+  *density
+  *elastic
+  *solidsection, elset=ASSEMBLY_ACTIVELAYER-1__PICKEDSET8, material=ACTIVELAYER_POROUS_CALIBRATABLE
+  *solidsection, elset=ASSEMBLY_ACTIVELAYER-1__PICKEDSET8, material=ACTIVELAYER_POROUS_CALIBRATABLE
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *surface, type=ELEMENT, name=ASSEMBLY_ACTIVELAYER-1_TOP
+  *surface, type=ELEMENT, name=ASSEMBLY_ACTIVELAYER-1_BOTTOM
+  *surface, type=ELEMENT, name=ASSEMBLY_LOWERROLLER-1_CONTACTFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_UPPERROLLER-1_CONTACTFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_LOWERROLLER_CONTACT
+  *surface, type=ELEMENT, name=ASSEMBLY_SHEET_BOTTOM
+  *surface, type=ELEMENT, name=ASSEMBLY_SHEET_TOP
+  *surface, type=ELEMENT, name=ASSEMBLY_UPPERROLLER_CONTACT
+  *surface, type=ELEMENT, name=ASSEMBLY__GENERALCONTACT_ROLLERSHEET_GCS0_22
+  *surface, type=ELEMENT, name=ASSEMBLY__GENERALCONTACT_ROLLERSHEET_GCS0_23
+  *surface, type=ELEMENT, name=ASSEMBLY__GENERALCONTACT_ROLLERSHEET_GCS0_24
+  *surface, type=ELEMENT, name=ASSEMBLY__GENERALCONTACT_ROLLERSHEET_GCS0_25
+  *surfacepropertyassignment, property=GEOMETRICCORRECTION
+  *surface, type=ELEMENT, name=ASSEMBLY_ACTIVELAYER-1_TOP
+  *surface, type=ELEMENT, name=ASSEMBLY_ACTIVELAYER-1_BOTTOM
+  *surface, type=ELEMENT, name=ASSEMBLY_LOWERROLLER-1_CONTACTFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_UPPERROLLER-1_CONTACTFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_LOWERROLLER_CONTACT
+  *surface, type=ELEMENT, name=ASSEMBLY_SHEET_BOTTOM
+  *surface, type=ELEMENT, name=ASSEMBLY_SHEET_TOP
+  *surface, type=ELEMENT, name=ASSEMBLY_UPPERROLLER_CONTACT
+  *surface, type=ELEMENT, name=ASSEMBLY__GENERALCONTACT_ROLLERSHEET_GCS0_22
+  *surface, type=ELEMENT, name=ASSEMBLY__GENERALCONTACT_ROLLERSHEET_GCS0_23
+  *surface, type=ELEMENT, name=ASSEMBLY__GENERALCONTACT_ROLLERSHEET_GCS0_24
+  *surface, type=ELEMENT, name=ASSEMBLY__GENERALCONTACT_ROLLERSHEET_GCS0_25
+  *surfaceinteraction, name=CONTACT_ROLLER_ACTIVE_MU0P1
+  *surfacebehavior, pressure-overclosure=HARD
+  *contact
+  *contactinclusions, allexterior
+  *contactpropertyassignment
+  *surfacepropertyassignment, property=GEOMETRICCORRECTION
+
+ ***WARNING: The general contact domain for modeling contact interactions in 
+             Abaqus/Standard has double-sided facets. Initial contact 
+             adjustments for resolving gaps and  overclosures when a surface 
+             with double-sided facets is paired with any surface having 
+             double-sided facets may be incorrect. Similarly, adjustments for 
+             double-sided surfaces crossing each other may be incorrect and no 
+             additional warnings or error messages will be issued. In all these 
+             cases, we recommend using single-sided surfaces under *CONTACT 
+             INITIALIZATION ASSIGNMENT to  handle initial adjustments more 
+             precisely and avoid  possible convergence problems.
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *surfaceinteraction, name=CONTACT_ROLLER_ACTIVE_MU0P1
+  *friction, sliptolerance=0.005
+  *surfacebehavior, pressure-overclosure=HARD
+  *surfaceinteraction, name=CONTACT_ROLLER_ACTIVE_MU0P1
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *boundary, amplitude=AMP_UPPER_DROP
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *boundary, amplitude=AMP_UPPER_DROP
+
+
+  SECONDARY: General_Contact_Faces                                                           
+  MAIN:      General_Contact_Faces                                                           
+              DISTANCE
+   NODE       ADJUSTED    REMARKS/WARNINGS
+
+        19   6.00722E-09  ADJUSTED TO (-1.80489E-26, 0.15000    , 2.94761E-10).
+       316   6.00721E-09  ADJUSTED TO (  2.5000    , 0.15000    , 2.94761E-10).
+        20   1.58692E-18  ADJUSTED TO (-4.76798E-36, 1.58501E-18, 7.78670E-20).
+       279   7.51135E-18  ADJUSTED TO (  2.5000    , 7.50230E-18, 3.68566E-19).
+        21   6.00722E-09  ADJUSTED TO (  50.000    , 0.15000    , 2.94762E-10).
+       298   6.00722E-09  ADJUSTED TO (  47.500    , 0.15000    , 2.94761E-10).
+        22   2.21964E-15  ADJUSTED TO (  50.000    ,-2.21697E-15,-1.08913E-16).
+       297   7.85089E-15  ADJUSTED TO (  47.500    ,-7.84143E-15,-3.85226E-16).
+       280   4.95886E-15  ADJUSTED TO (  5.0000    ,-4.95289E-15,-2.43321E-16).
+       281   2.64200E-15  ADJUSTED TO (  7.5000    ,-2.63882E-15,-1.29637E-16).
+       282   2.69458E-15  ADJUSTED TO (  10.000    , 2.69134E-15, 1.32217E-16).
+       283   8.50622E-16  ADJUSTED TO (  12.500    ,-8.49597E-16,-4.17382E-17).
+       284   1.82142E-15  ADJUSTED TO (  15.000    , 1.81923E-15, 8.93734E-17).
+       285   2.61196E-15  ADJUSTED TO (  17.500    ,-2.60881E-15,-1.28163E-16).
+       286   2.19163E-15  ADJUSTED TO (  20.000    , 2.18899E-15, 1.07539E-16).
+       287   4.50849E-15  ADJUSTED TO (  22.500    , 4.50306E-15, 2.21222E-16).
+       288   4.51601E-15  ADJUSTED TO (  25.000    , 4.51057E-15, 2.21591E-16).
+       289   3.63534E-15  ADJUSTED TO (  27.500    , 3.63096E-15, 1.78378E-16).
+       290   5.06402E-15  ADJUSTED TO (  30.000    , 5.05792E-15, 2.48481E-16).
+       291   2.76218E-15  ADJUSTED TO (  32.500    , 2.75886E-15, 1.35534E-16).
+
+ ***NOTE: NOT ALL THE NODES THAT HAVE BEEN ADJUSTED WERE PRINTED. SPECIFY 
+          *PREPRINT,CONTACT=YES FOR COMPLETE PRINTOUT.
+  *surfaceinteraction, name=CONTACT_ROLLER_ACTIVE_MU0P1
+  *rigidbody, refnode=ASSEMBLY_RP_LOWERROLLER, elset=ASSEMBLY__PICKEDSET20
+  *rigidbody, refnode=ASSEMBLY_RP_UPPERROLLER, elset=ASSEMBLY__PICKEDSET19
+  *surface, type=ELEMENT, name=ASSEMBLY_ACTIVELAYER-1_TOP
+  *surface, type=ELEMENT, name=ASSEMBLY_ACTIVELAYER-1_BOTTOM
+  *surface, type=ELEMENT, name=ASSEMBLY_LOWERROLLER-1_CONTACTFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_UPPERROLLER-1_CONTACTFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_LOWERROLLER_CONTACT
+  *surface, type=ELEMENT, name=ASSEMBLY_SHEET_BOTTOM
+  *surface, type=ELEMENT, name=ASSEMBLY_SHEET_TOP
+  *surface, type=ELEMENT, name=ASSEMBLY_UPPERROLLER_CONTACT
+  *surface, type=ELEMENT, name=ASSEMBLY__GENERALCONTACT_ROLLERSHEET_GCS0_22
+  *surface, type=ELEMENT, name=ASSEMBLY__GENERALCONTACT_ROLLERSHEET_GCS0_23
+  *surface, type=ELEMENT, name=ASSEMBLY__GENERALCONTACT_ROLLERSHEET_GCS0_24
+  *surface, type=ELEMENT, name=ASSEMBLY__GENERALCONTACT_ROLLERSHEET_GCS0_25
+  *output, field, numberinterval=40, timemarks=NO
+  *output, history, variable=PRESELECT
+  *output, history, numberinterval=100, timemarks=NO
+  *elementoutput, elset=ASSEMBLY_SHEET_ALL, directions=YES
+  *output, field, numberinterval=40, timemarks=NO
+  *output, history, variable=PRESELECT
+  *output, history, numberinterval=100, timemarks=NO
+  *elementoutput, elset=ASSEMBLY_SHEET_ALL, directions=YES
+  *output, field, numberinterval=40, timemarks=NO
+  *output, history, variable=PRESELECT
+  *output, history, numberinterval=100, timemarks=NO
+  *elementoutput, elset=ASSEMBLY_SHEET_ALL, directions=YES
+  *step, name=Press_Down, nlgeom=YES, inc=10000
+  *step, name=Press_Down, nlgeom=YES, inc=10000
+  *output, field, numberinterval=40, timemarks=NO
+  *output, history, variable=PRESELECT
+  *output, history, numberinterval=100, timemarks=NO
+  *step, name=Press_Down, nlgeom=YES, inc=10000
+  *step, name=Press_Down, nlgeom=YES, inc=10000
+  *static, stabilize=0.0002, allsdtol=0, continue=NO
+
+ ***WARNING: CONSTANT DAMPING FACTOR WILL BE USED THROUGHOUT THE WHOLE STEP 
+             SINCE ALLSDTOL IS EQUAL TO ZERO.
+  *boundary, amplitude=AMP_UPPER_DROP
+  *output, field, numberinterval=40, timemarks=NO
+  *nodeoutput, nset=ASSEMBLY_SHEET_ALL
+  *elementoutput, elset=ASSEMBLY_SHEET_ALL, directions=YES
+  *contactoutput, nset=ASSEMBLY_SHEET_ALL
+  *output, history, variable=PRESELECT
+  *output, history, numberinterval=100, timemarks=NO
+  *nodeoutput, nset=ASSEMBLY_RP_LOWERROLLER
+  *nodeoutput, nset=ASSEMBLY_RP_UPPERROLLER
+  *endstep
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *step, name=Press_Down, nlgeom=YES, inc=10000
+  *static, stabilize=0.0002, allsdtol=0, continue=NO
+  *boundary, amplitude=AMP_UPPER_DROP
+  *endstep
+
+
+
+                            P R O B L E M   S I Z E
+
+
+          NUMBER OF ELEMENTS IS                                  4890
+          NUMBER OF ELEMENTS DEFINED BY THE USER AND *TIE        3792
+          NUMBER OF INTERNAL ELEMENTS GENERATED FOR CONTACT      1096
+          NUMBER OF NODES IS                                     6760
+          NUMBER OF NODES DEFINED BY THE USER                    4568
+          NUMBER OF INTERNAL NODES GENERATED BY THE PROGRAM      2192
+          TOTAL NUMBER OF VARIABLES IN THE MODEL                16998
+          (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
+           VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
+
+
+
+                              END OF USER INPUT PROCESSING
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =     0.90    
+       SYSTEM TIME (SEC)    =     0.10    
+       TOTAL CPU TIME (SEC) =      1.0    
+       WALLCLOCK TIME (SEC) =            1
+1
+
+   Abaqus 2025                                  Date 23-Jun-2026   Time 04:30:43
+   For use by Supplied by Team-SolidSQUAD under license from Dassault Systemes or its subsidiary.
+
+     Local static symmetric normal press model with rigid rollers                              STEP    1  INCREMENT    1
+                                                                                          TIME COMPLETED IN THIS STEP   0.00    
+
+
+                        A N A L Y S I S    D A T A C H E C K
+
+
+
+
+
+                    TOTAL MASS OF MODEL
+
+                      4.7812502E-07
+
+
+                    LOCATION OF THE CENTER OF MASS OF THE MODEL
+
+                       25.00000          7.5000003E-02       12.50000    
+
+
+                    MOMENTS OF INERTIA ABOUT THE ORIGIN
+                           I(XX)               I(YY)               I(ZZ)
+
+                      9.9920367E-05      4.9885227E-04      3.9893922E-04
+
+
+                    PRODUCTS OF INERTIA ABOUT THE ORIGIN
+                           I(XY)               I(XZ)               I(YZ)
+
+                     -8.9648445E-07     -1.4941407E-04     -4.4824222E-07
+
+
+                    MOMENTS OF INERTIA ABOUT THE CENTER OF MASS
+                           I(XX)               I(YY)               I(ZZ)
+
+                      2.5210643E-05      1.2531710E-04      1.0010839E-04
+
+
+                    PRODUCTS OF INERTIA ABOUT THE CENTER OF MASS
+                           I(XY)               I(XZ)               I(YZ)
+
+                      1.2705494E-20     -5.4210109E-19     -1.1913905E-16
+
+
+                              RIGID BODY MASS AND INERTIA 
+                              --------------------------- 
+
+ 
+ 
+                     REFERENCE NODE IS:         2
+ 
+ 
+                     POSITION OF THE REFERENCE NODE
+                               X                Y                Z
+                          0.000000          -50.00000           0.000000
+ 
+ 
+                     TOTAL MASS OF RIGID BODY
+ 
+                          0.000000
+ 
+ 
+                     LOCATION OF THE CENTER OF MASS OF RIGID BODY
+                          0.0000000E+00     0.0000000E+00     0.0000000E+00
+ 
+ 
+                     MOMENTS OF INERTIA ABOUT THE CENTER OF RIGID BODY
+                            I(XX)               I(YY)               I(ZZ)
+                          0.000000           0.000000           0.000000
+ 
+ 
+                     PRODUCTS OF INERTIA ABOUT THE CENTER OF RIGID BODY
+                            I(XY)               I(XZ)               I(YZ)
+                          0.000000           0.000000           0.000000
+ 
+ 
+                     REFERENCE NODE IS:         1
+ 
+ 
+                     POSITION OF THE REFERENCE NODE
+                               X                Y                Z
+                          0.000000           50.15000           0.000000
+ 
+ 
+                     TOTAL MASS OF RIGID BODY
+ 
+                          0.000000
+ 
+ 
+                     LOCATION OF THE CENTER OF MASS OF RIGID BODY
+                          0.0000000E+00     0.0000000E+00     0.0000000E+00
+ 
+ 
+                     MOMENTS OF INERTIA ABOUT THE CENTER OF RIGID BODY
+                            I(XX)               I(YY)               I(ZZ)
+                          0.000000           0.000000           0.000000
+ 
+ 
+                     PRODUCTS OF INERTIA ABOUT THE CENTER OF RIGID BODY
+                            I(XY)               I(XZ)               I(YZ)
+                          0.000000           0.000000           0.000000
+  
+                   M E M O R Y   E S T I M A T E
+  
+ PROCESS      FLOATING PT       MINIMUM MEMORY        MEMORY TO
+              OPERATIONS           REQUIRED          MINIMIZE I/O
+             PER ITERATION           (MB)               (MB)
+  
+     1          2.68E+09               21                 56
+  
+ NOTE:
+      (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
+          THE MEMORY REQUIREMENT PRINTED HERE CAN ONLY BE VIEWED AS A GENERAL GUIDELINE BASED ON THE BEST
+          KNOWLEDGE AVAILABLE AT THE BEGINNING OF A STEP BEFORE THE SOLUTION PROCESS HAS BEGUN.
+      (2) THE ESTIMATE IS NORMALLY UPDATED AT THE BEGINNING OF EVERY STEP. IT IS THE MAXIMUM VALUE OF THE
+          ESTIMATE FROM THE CURRENT STEP TO THE LAST STEP OF THE ANALYSIS, WITH UNSYMMETRIC SOLUTION TAKEN
+          INTO ACCOUNT IF APPLICABLE. 
+      (3) SINCE THE ESTIMATE IS BASED ON THE ACTIVE DEGREES OF FREEDOM IN THE FIRST ITERATION OF THE 
+          CURRENT STEP, THE MEMORY ESTIMATE MIGHT BE SIGNIFICANTLY DIFFERENT THAN ACTUAL USAGE FOR 
+          PROBLEMS WITH SUBSTANTIAL CHANGES IN ACTIVE DEGREES OF FREEDOM BETWEEN STEPS (OR EVEN WITHIN
+          THE SAME STEP). EXAMPLES ARE: PROBLEMS WITH SIGNIFICANT CONTACT CHANGES, PROBLEMS WITH MODEL
+          CHANGE, PROBLEMS WITH BOTH STATIC STEP AND STEADY STATE DYNAMIC PROCEDURES WHERE ACOUSTIC 
+          ELEMENTS WILL ONLY BE ACTIVATED IN THE STEADY STATE DYNAMIC STEPS.
+      (4) FOR MULTI-PROCESS EXECUTION, THE ESTIMATED VALUE OF FLOATING POINT OPERATIONS FOR EACH PROCESS
+          IS BASED ON AN INITIAL SCHEDULING OF OPERATIONS AND MIGHT NOT REFLECT THE ACTUAL FLOATING 
+          POINT OPERATIONS COMPLETED ON EACH PROCESS. OPERATIONS ARE DYNAMICALLY BALANCED DURING EXECUTION, 
+          SO THE ACTUAL BALANCE OF OPERATIONS BETWEEN PROCESSES IS EXPECTED TO BE BETTER THAN THE ESTIMATE
+          PRINTED HERE.
+      (5) THE UPPER LIMIT OF MEMORY THAT CAN BE ALLOCATED BY ABAQUS WILL IN GENERAL DEPEND ON THE VALUE OF
+          THE "MEMORY" PARAMETER AND THE AMOUNT OF PHYSICAL MEMORY AVAILABLE ON THE MACHINE. PLEASE SEE
+          THE "ABAQUS ANALYSIS USER'S MANUAL" FOR MORE DETAILS. THE ACTUAL USAGE OF MEMORY AND OF DISK
+          SPACE FOR SCRATCH DATA WILL DEPEND ON THIS UPPER LIMIT AS WELL AS THE MEMORY REQUIRED TO MINIMIZE
+          I/O. IF THE MEMORY UPPER LIMIT IS GREATER THAN THE MEMORY REQUIRED TO MINIMIZE I/O, THEN THE ACTUAL
+          MEMORY USAGE WILL BE CLOSE TO THE ESTIMATED "MEMORY TO MINIMIZE I/O" VALUE, AND THE SCRATCH DISK
+          USAGE WILL BE CLOSE-TO-ZERO; OTHERWISE, THE ACTUAL MEMORY USED WILL BE CLOSE TO THE PREVIOUSLY
+          MENTIONED MEMORY LIMIT, AND THE SCRATCH DISK USAGE WILL BE ROUGHLY PROPORTIONAL TO THE DIFFERENCE
+          BETWEEN THE ESTIMATED "MEMORY TO MINIMIZE I/O" AND THE MEMORY UPPER LIMIT. HOWEVER ACCURATE
+          ESTIMATE OF THE SCRATCH DISK SPACE IS NOT POSSIBLE.
+      (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
+
+
+
+                              ANALYSIS DATACHECK COMPLETE
+                              WITH      2 WARNING MESSAGES ON THE DAT FILE
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =      1.4    
+       SYSTEM TIME (SEC)    =      0.0    
+       TOTAL CPU TIME (SEC) =      1.4    
+       WALLCLOCK TIME (SEC) =            1

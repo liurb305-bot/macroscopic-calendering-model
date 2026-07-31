@@ -1,0 +1,311 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.Model(modelType=STANDARD_EXPLICIT, name=
+    'RollPress_Static_LocalSym_50mm_RigidRoller')
+del mdb.models['Model-1']
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].Material(name=
+    'ActiveLayer_Porous_Calibratable')
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].materials['ActiveLayer_Porous_Calibratable'].Density(
+    table=((2.55e-09, ), ))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].materials['ActiveLayer_Porous_Calibratable'].Elastic(
+    table=((6500.0, 0.01), ))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].materials['ActiveLayer_Porous_Calibratable'].CapPlasticity(
+    table=((0.0032, 5.0, 0.8, 0.048, 0.02, 1.0), ))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].materials['ActiveLayer_Porous_Calibratable'].capPlasticity.CapHardening(
+    table=((0.048, 0.0), (0.0496, 0.05), (0.0528, 0.1), (0.0576, 0.15), (0.064, 
+    0.18), (0.072, 0.2), (0.088, 0.22), (0.112, 0.24), (0.152, 0.26), (0.216, 
+    0.28), (0.312, 0.3), (0.384, 0.31), (0.48, 0.32), (0.592, 0.33)))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].HomogeneousSolidSection(
+    material='ActiveLayer_Porous_Calibratable', name='Sec_ActiveLayer', 
+    thickness=None)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].ConstrainedSketch(
+    name='ActiveLayer_sketch', sheetSize=160.0)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].sketches['ActiveLayer_sketch'].rectangle(
+    point1=(0.0, 0.0), point2=(50.0, 0.15))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].Part(dimensionality=
+    THREE_D, name='ActiveLayer', type=DEFORMABLE_BODY)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].BaseSolidExtrude(
+    depth=25.0, sketch=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].sketches['ActiveLayer_sketch'])
+del mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].sketches['ActiveLayer_sketch']
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].DatumPlaneByPrincipalPlane(
+    offset=1.0, principalPlane=XYPLANE)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].PartitionCellByDatumPlane(
+    cells=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].cells
+    , datumPlane=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].datums[2])
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].DatumPlaneByPrincipalPlane(
+    offset=5.0, principalPlane=XYPLANE)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].PartitionCellByDatumPlane(
+    cells=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].cells
+    , datumPlane=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].datums[4])
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].DatumPlaneByPrincipalPlane(
+    offset=12.5, principalPlane=XYPLANE)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].PartitionCellByDatumPlane(
+    cells=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].cells
+    , datumPlane=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].datums[6])
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].SectionAssignment(
+    region=Region(
+    cells=mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].cells.getSequenceFromMask(
+    mask=('[#f ]', ), )), sectionName='Sec_ActiveLayer')
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].Surface(
+    name='Top', side2Faces=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].faces.getSequenceFromMask(
+    mask=('[#12088 ]', ), ))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].Surface(
+    name='Bottom', side2Faces=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].faces.getSequenceFromMask(
+    mask=('[#40904 ]', ), ))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].Set(
+    faces=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].faces.getSequenceFromMask(
+    mask=('[#c050 ]', ), ), name='XSymFace')
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].Set(
+    faces=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].faces.getSequenceFromMask(
+    mask=('[#100000 ]', ), ), name='ZSymFace')
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].setElementType(
+    elemTypes=(ElemType(elemCode=C3D8R, elemLibrary=STANDARD), ), regions=(
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].cells, 
+    ))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].setMeshControls(
+    elemShape=HEX, regions=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].cells
+    , technique=STRUCTURED)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].seedEdgeBySize(
+    constraint=FINER, edges=
+    [mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[1], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[3], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[8], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[11], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[15], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[19], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[21], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[25], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[27], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[34]]
+    , size=2.5)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].seedEdgeBySize(
+    constraint=FINER, edges=
+    [mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[4], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[6], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[10], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[16]]
+    , size=2.5)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].seedEdgeBySize(
+    constraint=FINER, edges=
+    [mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[7], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[9], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[12], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[29]]
+    , size=1.5)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].seedEdgeBySize(
+    constraint=FINER, edges=
+    [mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[18], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[20], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[22], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[32]]
+    , size=0.6)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].seedEdgeBySize(
+    constraint=FINER, edges=
+    [mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[26], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[28], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[30], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[33]]
+    , size=0.3)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].seedEdgeByNumber(
+    constraint=FINER, edges=
+    [mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[0], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[2], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[5], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[13], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[14], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[17], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[23], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[24], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[31], 
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].edges[35]]
+    , number=5)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'].generateMesh(
+    )
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].ConstrainedSketch(
+    name='Roller_sketch', sheetSize=160.0)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].sketches['Roller_sketch'].CircleByCenterPerimeter(
+    center=(0.0, 0.0), point1=(50.0, 0.0))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].Part(dimensionality=
+    THREE_D, name='RigidRoller_CylindricalShell', type=DISCRETE_RIGID_SURFACE)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['RigidRoller_CylindricalShell'].BaseShellExtrude(
+    depth=70.0, sketch=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].sketches['Roller_sketch'])
+del mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].sketches['Roller_sketch']
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['RigidRoller_CylindricalShell'].Surface(
+    name='ContactFace', side1Faces=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['RigidRoller_CylindricalShell'].faces
+    , side2Faces=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['RigidRoller_CylindricalShell'].faces)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['RigidRoller_CylindricalShell'].setElementType(
+    elemTypes=(ElemType(elemCode=R3D4, elemLibrary=STANDARD), ), regions=(
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['RigidRoller_CylindricalShell'].faces, 
+    ))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['RigidRoller_CylindricalShell'].seedPart(
+    deviationFactor=0.1, minSizeFactor=0.1, size=12.0)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['RigidRoller_CylindricalShell'].seedEdgeByNumber(
+    constraint=FINER, edges=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['RigidRoller_CylindricalShell'].edges
+    , number=64)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['RigidRoller_CylindricalShell'].generateMesh(
+    )
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.DatumCsysByDefault(
+    CARTESIAN)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.Instance(
+    dependent=ON, name='ActiveLayer-1', part=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['ActiveLayer'])
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.Instance(
+    dependent=ON, name='LowerRoller-1', part=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['RigidRoller_CylindricalShell'])
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.Instance(
+    dependent=ON, name='UpperRoller-1', part=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].parts['RigidRoller_CylindricalShell'])
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.rotate(
+    angle=90.0, axisDirection=(0.0, 1.0, 0.0), axisPoint=(0.0, 0.0, 0.0), 
+    instanceList=('LowerRoller-1', 'UpperRoller-1'))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.translate(
+    instanceList=('LowerRoller-1', ), vector=(0.0, -50.0, 0.0))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.translate(
+    instanceList=('UpperRoller-1', ), vector=(0.0, 50.15, 0.0))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.ReferencePoint(
+    point=(0.0, 50.15, 0.0))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.ReferencePoint(
+    point=(0.0, -50.0, 0.0))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.Set(name=
+    'RP_UpperRoller', referencePoints=(
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.referencePoints[8], 
+    ))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.Set(name=
+    'RP_LowerRoller', referencePoints=(
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.referencePoints[9], 
+    ))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.Set(
+    cells=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.instances['ActiveLayer-1'].cells
+    , name='Sheet_All')
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.Surface(
+    name='Sheet_Top', side2Faces=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.instances['ActiveLayer-1'].faces.getSequenceFromMask(
+    mask=('[#12088 ]', ), ))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.Surface(
+    name='Sheet_Bottom', side2Faces=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.instances['ActiveLayer-1'].faces.getSequenceFromMask(
+    mask=('[#40904 ]', ), ))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.Surface(
+    name='UpperRoller_Contact', side1Faces=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.instances['UpperRoller-1'].faces
+    , side2Faces=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.instances['UpperRoller-1'].faces)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.Surface(
+    name='LowerRoller_Contact', side1Faces=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.instances['LowerRoller-1'].faces
+    , side2Faces=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.instances['LowerRoller-1'].faces)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.Set(
+    faces=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.instances['ActiveLayer-1'].faces.getSequenceFromMask(
+    mask=('[#c050 ]', ), ), name='Sheet_XSymFace')
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.Set(
+    faces=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.instances['ActiveLayer-1'].faces.getSequenceFromMask(
+    mask=('[#100000 ]', ), ), name='Sheet_ZSymFace')
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].ContactProperty(name=
+    'Contact_Roller_Active_mu0p1')
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].interactionProperties['Contact_Roller_Active_mu0p1'].NormalBehavior(
+    allowSeparation=ON, constraintEnforcementMethod=DEFAULT, 
+    pressureOverclosure=HARD)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].interactionProperties['Contact_Roller_Active_mu0p1'].TangentialBehavior(
+    dependencies=0, directionality=ISOTROPIC, formulation=PENALTY, fraction=
+    0.005, maximumElasticSlip=FRACTION, pressureDependency=OFF, 
+    slipRateDependency=OFF, table=((0.1, ), ), temperatureDependency=OFF)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].RigidBody(bodyRegion=
+    Region(
+    faces=mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.instances['UpperRoller-1'].faces.getSequenceFromMask(
+    mask=('[#1 ]', ), )), name='Rigid_UpperRoller', refPointRegion=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.sets['RP_UpperRoller'])
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].RigidBody(bodyRegion=
+    Region(
+    faces=mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.instances['LowerRoller-1'].faces.getSequenceFromMask(
+    mask=('[#1 ]', ), )), name='Rigid_LowerRoller', refPointRegion=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.sets['RP_LowerRoller'])
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].ContactStd(
+    createStepName='Initial', name='GeneralContact_RollerSheet')
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].interactions['GeneralContact_RollerSheet'].includedPairs.setValuesInStep(
+    stepName='Initial', useAllstar=ON)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].interactions['GeneralContact_RollerSheet'].contactPropertyAssignments.appendInStep(
+    assignments=((GLOBAL, SELF, 'Contact_Roller_Active_mu0p1'), ), stepName=
+    'Initial')
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].StaticStep(initialInc=
+    0.001, maxInc=0.005, maxNumInc=10000, minInc=1e-12, name='Press_Down', 
+    nlgeom=ON, previous='Initial', stabilizationMagnitude=0.0002, 
+    stabilizationMethod=DISSIPATED_ENERGY_FRACTION)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].SmoothStepAmplitude(
+    data=((0.0, 0.0), (1.0, 1.0)), name='Amp_Upper_Drop', timeSpan=STEP)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].DisplacementBC(
+    createStepName='Initial', name='BC_Lower_RP_Fixed', region=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.sets['RP_LowerRoller']
+    , u1=0.0, u2=0.0, u3=0.0, ur1=0.0, ur2=0.0, ur3=0.0)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].DisplacementBC(
+    createStepName='Initial', name='BC_Upper_RP_Guide', region=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.sets['RP_UpperRoller']
+    , u1=0.0, u2=UNSET, u3=0.0, ur1=UNSET, ur2=0.0, ur3=0.0)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].DisplacementBC(
+    amplitude='Amp_Upper_Drop', createStepName='Press_Down', name=
+    'BC_Upper_RP_Drop', region=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.sets['RP_UpperRoller']
+    , u1=UNSET, u2=-0.015, u3=UNSET, ur1=UNSET, ur2=UNSET, ur3=UNSET)
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].XsymmBC(
+    createStepName='Initial', name='BC_Sheet_XSym', region=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.sets['Sheet_XSymFace'])
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].ZsymmBC(
+    createStepName='Initial', name='BC_Sheet_ZSym', region=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.sets['Sheet_ZSymFace'])
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].fieldOutputRequests['F-Output-1'].suppress(
+    )
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].FieldOutputRequest(
+    createStepName='Press_Down', name='F_Sheet_StressStrainContact', 
+    numIntervals=40, region=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.sets['Sheet_All']
+    , timeMarks=OFF, variables=('S', 'LE', 'PE', 'PEEQ', 'U', 'RF', 'CSTRESS', 
+    'CSTATUS'))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].HistoryOutputRequest(
+    createStepName='Press_Down', name='H_UpperRoller_RP', numIntervals=100, 
+    region=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.sets['RP_UpperRoller']
+    , timeMarks=OFF, variables=('RF1', 'RF2', 'RF3', 'RM1', 'RM2', 'RM3', 'U1', 
+    'U2', 'U3', 'UR1'))
+mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].HistoryOutputRequest(
+    createStepName='Press_Down', name='H_LowerRoller_RP', numIntervals=100, 
+    region=
+    mdb.models['RollPress_Static_LocalSym_50mm_RigidRoller'].rootAssembly.sets['RP_LowerRoller']
+    , timeMarks=OFF, variables=('RF1', 'RF2', 'RF3', 'RM1', 'RM2', 'RM3', 'U1', 
+    'U2', 'U3', 'UR1'))
+mdb.Job(description=
+    'Local static symmetric normal press model with rigid rollers', model=
+    'RollPress_Static_LocalSym_50mm_RigidRoller', name=
+    'RollPress_Static_LocalSym_50mm_RigidRoller', nodalOutputPrecision=SINGLE, 
+    numCpus=6, numDomains=6, type=ANALYSIS)
+# Save by liu on 2026_06_23-04.26.14; build 2025 2024_09_20-21.00.46 RELr427 198590

@@ -1,0 +1,55 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 2025 replay file
+# Internal Version: 2024_09_20-21.00.46 RELr427 198590
+# Run by liu on Tue Jun 23 12:07:13 2026
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(1.38021, 1.38889), width=203.167, 
+    height=137.778)
+session.viewports['Viewport: 1'].makeCurrent()
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+#: Executing "onCaeStartup()" in the home directory ...
+#: =======================================================
+#: Abaqus MCP Plugin v4.0.0 (File IPC)
+#: =======================================================
+#: Home:   C:\Users\刘瑞博\.abaqus-mcp
+#: Abaqus: True
+#: Start:  mcp_start()     (background, recommended)
+#:         mcp_loop()      (blocking)
+#: Stop:   mcp_stop()
+#: Status: mcp_status()
+#: =======================================================
+execfile('E:/abaqus/3Djingya/build_static_1over8_press.py', __main__.__dict__)
+#: Executing "onCaeStartup()" in the home directory ...
+#: =======================================================
+#: Abaqus MCP Plugin v4.0.0 (File IPC)
+#: =======================================================
+#: Home:   C:\Users\刘瑞博\.abaqus-mcp
+#: Abaqus: True
+#: Start:  mcp_start()     (background, recommended)
+#:         mcp_loop()      (blocking)
+#: Stop:   mcp_stop()
+#: Status: mcp_status()
+#: =======================================================
+#: 模型 "RollPress_QuasiStatic_LocalSym_50mm_RigidRoller" 已创建.
+#: 相互作用属性 "Contact_Roller_Active_mu0p1" 已创建.
+#: 相互作用 "GeneralContact_RollerSheet" 已创建.
+#: 模型数据库已保存到 "E:\abaqus\3Djingya\RollPress_QuasiStatic_LocalSym_50mm_RigidRoller.cae".
+#: Created model: RollPress_QuasiStatic_LocalSym_50mm_RigidRoller
+#: Created job:   RollPress_QuasiStatic_LocalSym_50mm_RigidRoller
+#: CAE path:      E:\abaqus\3Djingya\RollPress_QuasiStatic_LocalSym_50mm_RigidRoller.cae
+#: INP path:      E:\abaqus\3Djingya\RollPress_QuasiStatic_LocalSym_50mm_RigidRoller.inp
+#: Coordinates: X=roller axis, Y=press direction, Z=rolling direction
+#: Sheet model size: X 50.000000 mm, Z 25.000000 mm, thickness 0.150000 mm
+#: Roller radius: 50.000000 mm; modeled roller width: 70.000000 mm
+#: Upper roller Y drop: 0.015000 mm
+#: Friction coefficient: 0.100000
+print('RT script done')
+#: RT script done
