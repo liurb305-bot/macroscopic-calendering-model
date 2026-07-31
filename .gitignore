@@ -1,0 +1,18 @@
+# Abaqus/session temporary files
+abaqus.rpy*
+abaqus*.rec
+abq.app_cache
+*.jnl
+*.com
+*.prt
+*.sim
+*.stt
+*.lck
+
+# Python/cache temporary files
+__pycache__/
+*.pyc
+
+# OS metadata
+Thumbs.db
+.DS_Store

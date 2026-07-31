@@ -1,0 +1,7 @@
+ODB: E:\abaqus\3D2\wide_roll_1_8.odb
+Step frames: 2
+Final step time: 1
+Thickness samples: 1301
+Thickness min/max/mean (um): 133.132339 / 141.718909 / 139.193661
+Total RF2 on ROLL_TOP (N): -184695.946902
+CPRESS max (MPa): 115.606293 from 55692 values
