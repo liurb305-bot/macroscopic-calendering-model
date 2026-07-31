@@ -25,6 +25,10 @@ calendering models built in `E:\abaqus`.
 - `dpc_parameter_fitting_2d_selected/`: selected 2D DPC cap-hardening fitting
   and sensitivity files used to screen candidate parameters before transfer to
   3D models.
+- `3Dceshi3.1/`: local static self-supporting film DPC press model with rigid
+  local roller arc shell surfaces, including 10% and 20% thickness-reduction
+  CAE/INP files, build scripts, postprocessing scripts, and extracted 10% CSV
+  results.
 
 ## Notes
 
